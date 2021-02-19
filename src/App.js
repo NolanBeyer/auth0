@@ -1,9 +1,21 @@
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import { useAuth0 } from './react-auth0-spa';
+import routes from './routes';
+
 
 function App() {
+  const { loading } = useAuth0()
+    if(loading) {
+      return  <div>...Loading</div>
+    }
+    
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="app">
+      <header>
+        <Navbar />
+          {routes}
+      </header>
     </div>
   );
 }
