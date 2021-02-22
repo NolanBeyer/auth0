@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { Auth0Provider } from "./react-auth0-spa";
-import { authConfig } from "./auth.config";
+import { Auth0Provider } from "./auth/react-auth0-spa";
+import { authConfig } from "./auth/auth.config";
 import { HashRouter } from "react-router-dom";
 
 const onRedirectCallback = (appState) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import { useAuth0 } from "./react-auth0-spa";
+import { useAuth0 } from "./auth/react-auth0-spa";
 import routes from "./routes";
 
 function App() {
